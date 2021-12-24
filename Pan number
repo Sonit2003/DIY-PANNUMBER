@@ -1,0 +1,11 @@
+pan=input("enter your pan number:")
+y=pan[0:5]
+x=pan[9:10]
+t=pan[5:9]
+if len(pan)==10:
+    if pan.isupper()==True and y.isalpha()==True and x.isalpha()==True and t.isdigit()==True:
+        print("valid pan number")
+    else:
+        print("invalid pan number")
+else:
+    print("invalid length")
